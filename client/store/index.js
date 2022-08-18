@@ -265,7 +265,7 @@ export const mutations = {
         const quiz = state.quiz
         try{
         const res = await axios({  
-            url: `http://localhost:9000/create/quiz/`,
+            url: `https://thetestzone.herokuapp.com/create/quiz/`,
             headers: {
               Authorization: `Bearer ` + accesstoken,
             },

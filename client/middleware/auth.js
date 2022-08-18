@@ -5,7 +5,7 @@ export default async function(context){
         const accesstoken = localStorage.getItem("accesstoken");
         
         const res = await axios({
-          url: `http://localhost:9000/token/checkAccess`,
+          url: `https://thetestzone.herokuapp.com/token/checkAccess`,
           headers: {
             Authorization: `Bearer ` + accesstoken,
           },
@@ -16,7 +16,7 @@ export default async function(context){
         try{
             const refreshToken = localStorage.getItem("refreshtoken");
             const res = await axios({
-              url: `http://localhost:9000/token/refresh`,
+              url: `https://thetestzone.herokuapp.com/token/refresh`,
               headers: {
                 Authorization: `Bearer ` + refreshToken,
               },

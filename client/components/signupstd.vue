@@ -185,7 +185,7 @@ export default {
         this.$router.push("/mainpage");
       } catch (e) {
         this.snackbar = true;
-        console.log(e.response.data);
+        console.log(e.response.data.msg);
         this.text = e.response.data.msg;
       }
     },
@@ -207,7 +207,7 @@ export default {
       }
       catch (e) {
         this.snackbar = true;
-        console.log(e.response.data);
+        console.log(e.response.data.msg);
         this.text = e.response.data.msg;
       }
     },
