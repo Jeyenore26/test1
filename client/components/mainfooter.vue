@@ -88,7 +88,7 @@ export default {
       try {
         const accesstoken = localStorage.getItem('accesstoken')
         const res = await axios({
-          url: `http://localhost:9000/user/profile`,
+          url: `https://thetestzone.herokuapp.com/user/profile`,
            headers: {
             Authorization: `Bearer ` + accesstoken,
           },

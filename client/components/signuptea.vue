@@ -184,7 +184,7 @@ export default {
     async SubmitData() {
       try {
         const res = await axios({
-          url: `http://localhost:9000/register/tea`,
+          url: `https://thetestzone.herokuapp.com/register/tea`,
           data: {
             name: this.name,
             email: this.email,
@@ -207,7 +207,7 @@ export default {
     async Login(){
        try{
       const res = await axios({
-        url:'http://localhost:9000/sign/login',
+        url:'https://thetestzone.herokuapp.com/sign/login',
         method: 'POST',
         data: {
             name:this.loginname,

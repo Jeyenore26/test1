@@ -211,7 +211,7 @@ export default {
       this.langnum = ar
       const accesstoken = localStorage.getItem("accesstoken");
       const res = await axios({
-        url: `http://localhost:9000/user/profile?page=1&limit=3`,
+        url: `https://thetestzone.herokuapp.com/user/profile?page=1&limit=3`,
         headers: {
           Authorization: `Bearer ` + accesstoken,
         },
@@ -235,7 +235,7 @@ export default {
       try {
         const accesstoken = localStorage.getItem('accesstoken')
         const res = await axios({
-           url: `http://localhost:9000/delete/quiz/` + joiningCode,
+           url: `https://thetestzone.herokuapp.com/delete/quiz/` + joiningCode,
             headers: {
               Authorization: `Bearer ` + accesstoken,
             },
@@ -257,7 +257,7 @@ export default {
           const accesstoken = localStorage.getItem("accesstoken");
           const res = await axios({
             url:
-              `http://localhost:9000/user/profile?page=` +
+              `https://thetestzone.herokuapp.com/user/profile?page=` +
               this.page +
               `&limit=3`,
             headers: {
@@ -283,7 +283,7 @@ export default {
           const accesstoken = localStorage.getItem("accesstoken");
           const res = await axios({
             url:
-              `http://localhost:9000/user/profile?page=` +
+              `https://thetestzone.herokuapp.com/user/profile?page=` +
               this.page +
               `&limit=3`,
             headers: {

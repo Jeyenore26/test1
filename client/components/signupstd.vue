@@ -170,7 +170,7 @@ export default {
     async SubmitData() {
       try {
         const res = await axios({
-          url: `http://localhost:9000/register/std`,
+          url: `https://thetestzone.herokuapp.com/register/std`,
           data: {
             name: this.name,
             email: this.email,
@@ -185,14 +185,14 @@ export default {
         this.$router.push("/mainpage");
       } catch (e) {
         this.snackbar = true;
+        console.log(e.response.data);
         this.text = e.response.data.msg;
-        console.log(e.response.data.msg);
       }
     },
     async Login() {
       try{
       const res = await axios({
-        url: "http://localhost:9000/sign/login",
+        url: "https://thetestzone.herokuapp.com/sign/login",
         method: "POST",
         data: {
           name: this.loginname,
@@ -207,8 +207,8 @@ export default {
       }
       catch (e) {
         this.snackbar = true;
+        console.log(e.response.data);
         this.text = e.response.data.msg;
-        console.log(e.response.data.msg);
       }
     },
   },

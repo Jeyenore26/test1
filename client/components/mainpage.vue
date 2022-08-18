@@ -155,7 +155,7 @@ export default {
       const accesstoken = localStorage.getItem("accesstoken");
       const res = await axios({
         url:
-          `http://localhost:9000/mainpage?page=1&limit=9&filter=` + this.filter,
+          `https://thetestzone.herokuapp.com/mainpage?page=1&limit=9&filter=` + this.filter,
         headers: {
           Authorization: `Bearer ` + accesstoken,
         },
@@ -192,7 +192,7 @@ export default {
         const accesstoken = localStorage.getItem("accesstoken");
         const res = await axios({
           url:
-            `http://localhost:9000/mainpage?page=` +
+            `https://thetestzone.herokuapp.com/mainpage?page=` +
             this.page +
             `&limit=9&filter=` +
             this.filter,
@@ -229,7 +229,7 @@ export default {
           const accesstoken = localStorage.getItem("accesstoken");
           const res = await axios({
             url:
-              `http://localhost:9000/mainpage?page=` +
+              `https://thetestzone.herokuapp.com/mainpage?page=` +
               this.page +
               `&limit=9&filter=` +
               this.filter,
@@ -256,7 +256,7 @@ export default {
           const accesstoken = localStorage.getItem("accesstoken");
           const res = await axios({
             url:
-              `http://localhost:9000/mainpage?page=` +
+              `https://thetestzone.herokuapp.com/mainpage?page=` +
               this.page +
               `&limit=9&filter=` +
               this.filter,

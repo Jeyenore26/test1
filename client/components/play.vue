@@ -197,7 +197,7 @@ export default {
     if (this.joinincode !== undefined) {
       try {
         const res = await axios({
-          url: `http://localhost:9000/quiz/join/` + this.joinincode,
+          url: `https://thetestzone.herokuapp.com/quiz/join/` + this.joinincode,
           method: "GET",
         });
         console.log("every this is Ok");
@@ -239,7 +239,7 @@ export default {
         const accesstoken = localStorage.getItem("accesstoken") || undefined;
         if (accesstoken) {
           const res = await axios({
-            url: "http://localhost:9000/quiz/hand/" + this.joinincode,
+            url: "https://thetestzone.herokuapp.com/quiz/hand/" + this.joinincode,
             data: {
               handedQuiz: quiz,
             },
@@ -251,7 +251,7 @@ export default {
           console.log(res.data.message);
         } else {
           const res = await axios({
-            url: "http://localhost:9000/quiz/guest/hand/" + this.joinincode,
+            url: "https://thetestzone.herokuapp.com/quiz/guest/hand/" + this.joinincode,
             data: {
               handedQuiz: quiz,
             },
@@ -267,7 +267,7 @@ export default {
       } catch (e) {
         const quiz = this.QuizAnswers;
         const res = await axios({
-          url: "http://localhost:9000/quiz/guest/hand/" + this.joinincode,
+          url: "https://thetestzone.herokuapp.com/quiz/guest/hand/" + this.joinincode,
           data: {
             handedQuiz: quiz,
           },
