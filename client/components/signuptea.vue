@@ -225,6 +225,10 @@ export default {
         this.text = e.response.data.msg;
         console.log(e.response.data.msg);
       }
+
+
+
+      
     }
   },
 }
