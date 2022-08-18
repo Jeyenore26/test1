@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build babel src -d lib",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "test": "jest"
+    "dev": "node_modules/.bin/nuxt",
+    "build": "node_modules/.bin/nuxt build",
+    "start": "node_modules/.bin/nuxt start",
+     "generate": "node_modules/.bin/nuxt generate",
+     "test":"jest"
   },
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.1.2",
