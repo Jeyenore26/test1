@@ -95,7 +95,7 @@ export default {
     }
 
   },
-routes: [
+"routes": [
     {
       "src": "/sw.js",
       "continue": true,
