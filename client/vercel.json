@@ -6,58 +6,8 @@
         "src": "nuxt.config.js",
         "use": "@nuxtjs/vercel-builder",
         "config": {}
-      },
-      [
-        {
-          "name": "createq",
-          "path": "/createq",
-          "component": "C:\\\\Users\\\\jeyen\\\\Documents\\\\GitHub\\\\test1\\\\client\\\\pages\\\\createq.vue",
-          "chunkName": "pages/createq",
-          "_name": "_2629f9f8"
-        },
-        {
-          "name": "mainpage",
-          "path": "/mainpage",
-          "component": "C:\\\\Users\\\\jeyen\\\\Documents\\\\GitHub\\\\test1\\\\client\\\\pages\\\\mainpage.vue",
-          "chunkName": "pages/mainpage",
-          "_name": "_1ce4c56e"
-        },
-        {
-          "name": "play",
-          "path": "/play",
-          "component": "C:\\\\Users\\\\jeyen\\\\Documents\\\\GitHub\\\\test1\\\\client\\\\pages\\\\play.vue",
-          "chunkName": "pages/play",
-          "_name": "_9fdee996"
-        },
-        {
-          "name": "profile",
-          "path": "/profile",
-          "component": "C:\\\\Users\\\\jeyen\\\\Documents\\\\GitHub\\\\test1\\\\client\\\\pages\\\\profile.vue",
-          "chunkName": "pages/profile",
-          "_name": "_13fe93b8"
-        },
-        {
-          "name": "signupstd",
-          "path": "/signupstd",
-          "component": "C:\\\\Users\\\\jeyen\\\\Documents\\\\GitHub\\\\test1\\\\client\\\\pages\\\\signupstd.vue",
-          "chunkName": "pages/signupstd",
-          "_name": "_7dbf7d5a"
-        },
-        {
-          "name": "signuptea",
-          "path": "/signuptea",
-          "component": "C:\\\\Users\\\\jeyen\\\\Documents\\\\GitHub\\\\test1\\\\client\\\\pages\\\\signuptea.vue",
-          "chunkName": "pages/signuptea",
-          "_name": "_ce3a7e72"
-        },
-        {
-          "name": "index",
-          "path": "/",
-          "component": "C:\\\\Users\\\\jeyen\\\\Documents\\\\GitHub\\\\test1\\\\client\\\\pages\\\\index.vue",
-          "chunkName": "pages/index",
-          "_name": "_d72fefbe"
-        }
-      ]
+      }
+      
     ]
     
     
